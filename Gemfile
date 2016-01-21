@@ -19,6 +19,7 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'spree_reviews', github: 'spree-contrib/spree_reviews', branch: '3-0-stable'
 gem 'spree_favorite_products', github: 'vinsol/spree_favorite_products', branch: '3-0-stable'
 gem 'spree', '3.0.4'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
