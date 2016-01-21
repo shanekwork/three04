@@ -18,8 +18,6 @@ Spree.config do |config|
   config.track_inventory_levels = false
   allow_backorder_shipping = true
   config.company = true
-  config.alternative_billing_phone = false
-  config.alternative_shipping_phone = false
 end
 
 Spree.user_class = "Spree::User"
