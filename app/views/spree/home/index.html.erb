@@ -10,3 +10,63 @@
   <% end %>
 </div>
 
+<div id="special-sale" class="clearfix">
+        <div class="container">
+            <div class="title">
+                <h3>Sale Items</h3>
+            </div>
+            <% @products.where(sale: true).each do |e| %>
+                <div class="product">                                    
+                    <div class="home_images">
+                        <%= link_to image_tag('http://ts.liveofficedata.co.uk/' + e.image_url), e %>
+                    </div>
+                    <div class="product-desc">
+                        <%= link_to e.description, e, class: 'threex3' %>
+                    </div>
+                    <div class="product-price">
+                        €<%= e.price %>
+                    </div>
+                </div>
+            <% end %>
+        </div><!--.container-->
+    </div><!--#special_sale-->
+
+    <div id="featured-latest">
+        <div class="container">
+            <div id="featured" class="clearfix">            
+                <div class="title">
+                    <h3>Featured Products</h3>
+                </div>
+                <div id="owl-carousel" class="owl-carousel">
+                    <% @products.where(featured: true).each do |e| %>
+                        <div class="product">
+                            <div class="home_images">
+                                <%= link_to image_tag('http://ts.liveofficedata.co.uk/' + e.image_url), e %>                            </div>
+                            <div class="product-desc">
+                                <%= link_to e.description, e, class: 'threex3' %>
+                            </div>
+                            <div class="product-price">
+                                €<%= e.price %>
+                            </div>
+                        </div>
+                    <% end %>
+                </div>
+            </div><!--#featured-->
+
+            <div id="latest" class="clearfix">
+                <div class="title">
+                    <h3>Latest Products</h3>
+                </div>
+                <% @products.where(latest: true).each do |e| %>
+                    <div class="product">
+                        <div class="home_images">
+                            <%= link_to image_tag('http://ts.liveofficedata.co.uk/' + e.image_url), e %>                        </div>
+                        <div class="product-desc">
+                            <%= link_to e.description, e, class: 'threex3' %>
+                        </div>
+                        <div class="product-price">
+                            €<%= e.price %>
+                        </div>
+                    </div>
+                <% end %>
+            </div><!--#featured-latest-->
