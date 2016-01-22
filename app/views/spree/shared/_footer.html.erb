@@ -1,6 +1,8 @@
 <footer>
-	<h3>Information</h3>
-	<nav id="footer-pages">
-  <ul><%= render partial: 'spree/static_content/static_content_list', collection: Spree::Page.by_store(current_store).visible.footer_links, as: :page %></ul>
-</nav>
+	<div class="container">
+		<h3>Information</h3>
+		<nav id="footer-pages">
+			<ul><%= render partial: 'spree/static_content/static_content_list', collection: Spree::Page.by_store(current_store).visible.footer_links, as: :page %></ul>
+		</nav>
+	</div>
 </footer>
