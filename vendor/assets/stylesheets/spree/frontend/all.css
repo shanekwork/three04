@@ -18,3 +18,8 @@ img {
 .panel-footer {
 	margin-top: 50px;
 }
+
+header img {
+	max-height: 3.5em;
+	max-width: 14.2em;
+}
