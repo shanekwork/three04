@@ -20,20 +20,20 @@
       </div>
       
       <%= f.field_container :sale do %>
-      <%= f.label :sale, raw(Spree.t(:sale) + content_tag(:span, ' *',  :class => "required")) %>
       <%= f.check_box :sale, :class => 'fullwidth title' %>
+      <%= f.label :sale, raw(Spree.t(:sale) + content_tag(:span, ' *',  :class => "required")) %>
       <%= f.error_message_on :sale %>
     <% end %>
 
     <%= f.field_container :featured do %>
-      <%= f.label :featured, raw(Spree.t(:featured) + content_tag(:span, ' *',  :class => "required")) %>
       <%= f.check_box :featured, :class => 'fullwidth title' %>
+      <%= f.label :featured, raw(Spree.t(:featured) + content_tag(:span, ' *',  :class => "required")) %>
       <%= f.error_message_on :featured %>
     <% end %>
 
     <%= f.field_container :latest do %>
+    <%= f.check_box :latest, :class => 'fullwidth title' %>
       <%= f.label :latest, raw(Spree.t(:latest) + content_tag(:span, ' *',  :class => "required")) %>
-      <%= f.check_box :latest, :class => 'fullwidth title' %>
       <%= f.error_message_on :latest %>
     <% end %>
 
