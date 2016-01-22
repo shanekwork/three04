@@ -28,4 +28,6 @@ footer {
 	width: 100%;
 	background: #333;
 	color: white;
+	clear: both;
+	margin-top: 10%;
 }
