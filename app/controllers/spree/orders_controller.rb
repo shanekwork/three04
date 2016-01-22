@@ -11,7 +11,7 @@ module Spree
 
     def show
       @order = Order.find_by_number!(params[:id])
-      @img = Spree::Product.image_url
+      
     end
 
     def update
