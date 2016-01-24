@@ -89,9 +89,63 @@ footer {
 
 #footer-top {
 	padding: 20px 0;
+	color: #949494;
 }
 
 #footer-bottom {
 	padding: 20px 0;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #949494;
 }
+
+#footer-top ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#footer-top li {
+	border-bottom: 1px solid #949494;
+}
+
+#footer-top ul a {
+	color: #949494;
+	padding: 10px 0;
+	display: inline-block;
+}
+
+#footer-top h3 {
+	border-bottom: solid 2px #949494;
+	padding-bottom: 10px;
+	color: white !important;
+}
+
+img.greyLogo {
+	max-width: 11.2em;
+}
+
+
+
+form#contact_newsletter fieldset {
+	border: none;
+	padding: 0
+}
+
+form#contact_newsletter fieldset input {
+	background: #555555;
+	border: none !important;
+	color: #a7a7a7;
+	font-size: 0.68em;
+	padding: 0.95em 0.85em !important;
+	width: 100%;
+}
+
+form#contact_newsletter input[type="submit"] {
+	background: #ec4445 !important;
+	text-align: center !important;
+}
+
+.social a {
+	display: inline !important;
+}
+
+
+

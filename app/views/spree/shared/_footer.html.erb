@@ -5,7 +5,7 @@
 			
 			<div class="row">
 				<div class="col-md-3">
-					
+					<img class="greyLogo" src="/assets/store/logo-grey.png" alt="Logo">
 				</div>
 				<div class="col-md-3">
 					<h3>Information</h3>
@@ -13,11 +13,60 @@
 						<ul><%= render partial: 'spree/static_content/static_content_list', collection: Spree::Page.by_store(current_store).visible.footer_links, as: :page %></ul>
 					</nav>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 foot-contact">
 					<h3>Contact</h3>
+					<p>
+						<i class="fa fa-map-marker"><br><br>
+						address1, address2, address3
+					</p><br>
+					<p>
+						<i class="fa fa-phone"><br><br>
+						+353 1 453 7896
+					</p><br>
+					<p>
+						<i class="fa fa-envelope-o"><br><br>
+						info@cartridges.ie
+					</p>
 				</div>
 				<div class="col-md-3">
 					<h3>Newsletter</h3>
+					<p>
+						Subscribe to the Stationery Store mailing list to receive updates on new arrivals, special offers and other discount information.
+					</p>
+					<form id="contact_newsletter" class="form-horizontal">
+						<fieldset id="fieldNewsletter">						
+							<div> 
+								
+								<input id="email-newsletter" name="email-newsletter" type="email" value="" placeholder="Enter your e-mail..." required="">
+							</div>
+								 
+							<div class="button">
+								<input id="submit" type="submit" value="Submit">
+							</div>
+						</fieldset>
+					</form><br>
+
+					<div class="social">
+						<ul>
+							<li>
+								<a title="facebook" href="" target="_blank">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+
+							<li>	
+								<a title="twitter" href="" target="_blank">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+
+							<li>	
+								<a title="linkedin" href="" target="_blank">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			
