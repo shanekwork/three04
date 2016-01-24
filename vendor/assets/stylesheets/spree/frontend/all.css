@@ -216,7 +216,7 @@ form#contact_newsletter input[type="submit"] {
 	margin-bottom: 20px;
 }
 
-#checkout-step-confirm li.active a {
+li.active > a {
 	background: #ec4445 !important;
 }
 
