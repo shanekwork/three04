@@ -31,10 +31,19 @@ header img {
 #header-top {
 	background: #333;
 	color: white;
-	padding: 5px 0;
+	padding: 10px 0;
 }
 
 #header {background: white !important;}
+
+#spree-header #logo img {
+	width: 175px !important;
+}
+
+header img {
+	max-height: 150px;
+	max-width: 175px;
+}
 
 #spree-header {
 	background: #333 !important;
