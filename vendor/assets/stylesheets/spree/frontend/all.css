@@ -148,5 +148,12 @@ form#contact_newsletter input[type="submit"] {
 	display: inline !important;
 }
 
+.foot-contact i {
+	display: block !important;
+	width: 100%;
+}
 
+.foot-contact div {
+	margin-bottom: 20px;
+}
 
