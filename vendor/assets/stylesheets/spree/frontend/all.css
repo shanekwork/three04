@@ -15,6 +15,10 @@ img {
 	width: 100%;
 }
 
+.sale, .featured, .latest h3 {
+	text-align: center;
+}
+
 a {
 	text-decoration: none !important;
 }
