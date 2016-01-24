@@ -10,7 +10,7 @@
     <div class="container">
 		<div class="row">
 			<div class="title">
-            	<h3>Sale Items</h3>
+            	<hr class="sale">
         	</div>
 			<% @products.where(sale: true).each do |e| %>
 			  <div class="col-sm-6 col-md-3">
@@ -31,7 +31,7 @@
     <div class="container">
 		<div class="row">
 			<div class="title">
-            	<h3>Featured Items</h3>
+            	<hr class="featured">
         	</div>
 			<% @products.where(featured: true).each do |e| %>
 			  <div class="col-sm-6 col-md-3">
@@ -52,7 +52,7 @@
     <div class="container">
 		<div class="row">
 			<div class="title">
-            	<h3>Latest Items</h3>
+            	<hr class="latest">
         	</div>
 			<% @products.where(latest: true).each do |e| %>
 			  <div class="col-sm-6 col-md-3">

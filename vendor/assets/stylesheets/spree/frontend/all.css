@@ -11,6 +11,61 @@
  *= require spree/frontend/spree_reviews
  *= require spree/frontend/spree_static_content
 */
+
+hr.sale {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    padding-bottom: 25px;
+}
+hr.sale:after {
+    content: "Sale Items";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+hr.featured {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    padding-bottom: 25px;
+}
+hr.featured:after {
+    content: "Featured Items";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+hr.latest {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    padding-bottom: 25px;
+}
+hr.latest:after {
+    content: "Latest Items";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
 img {
 	width: 100%;
 }
@@ -159,5 +214,9 @@ form#contact_newsletter input[type="submit"] {
 
 .foot-contact div {
 	margin-bottom: 20px;
+}
+
+#checkout-step-confirm a {
+	background: #ec4445 !important;
 }
 
