@@ -58,7 +58,7 @@ header img {
 }
 
 input[type="submit"] {
-	background: #333 !important;
+	background: #ec4445 !important;
 	color: white !important;
 	border: none !important;
 }
@@ -68,7 +68,7 @@ input[type="submit"] {
 }
 
 button {
-	background: #333 !important;
+	background: #ec4445 !important;
 }
 
 button a {
