@@ -47,6 +47,11 @@ header img {
 input[type="submit"] {
 	background: #333 !important;
 	color: white !important;
+	border: none !important;
+}
+
+.btn {
+	border: none !important;
 }
 
 button {
@@ -71,4 +76,9 @@ footer {
 	color: white;
 	clear: both;
 	margin-top: 10%;
+}
+
+#footer-bottom {
+	padding: 20px 0;
+	border-top: 1px solid #ccc;
 }

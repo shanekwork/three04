@@ -1,8 +1,35 @@
 <footer>
-	<div class="container">
-		<h3>Information</h3>
-		<nav id="footer-pages">
-			<ul><%= render partial: 'spree/static_content/static_content_list', collection: Spree::Page.by_store(current_store).visible.footer_links, as: :page %></ul>
-		</nav>
+	
+	<div id="footer-top">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-3">
+					<h3>Information</h3>
+					<nav id="footer-pages">
+						<ul><%= render partial: 'spree/static_content/static_content_list', collection: Spree::Page.by_store(current_store).visible.footer_links, as: :page %></ul>
+					</nav>
+				</div>
+				<div class="col-md-3">
+					<h3>Contact</h3>
+				</div>
+				<div class="col-md-3">
+					<h3>Newsletter</h3>
+				</div>
+			</div>
+			
+			
+			
+		</div>
 	</div>
+	
+	<div id="footer-bottom">
+		<div class="container">
+			Powered by 39bots
+		</div>
+	</div>
+	
 </footer>
