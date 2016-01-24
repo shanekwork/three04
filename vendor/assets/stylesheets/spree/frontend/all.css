@@ -15,6 +15,10 @@ img {
 	width: 100%;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 .panel-footer {
 	margin-top: 50px;
 }
@@ -22,6 +26,43 @@ img {
 header img {
 	max-height: 3.5em;
 	max-width: 14.2em;
+}
+
+#header-top {
+	background: #333;
+	color: white;
+	padding: 5px 0;
+}
+
+#header {background: white !important;}
+
+#spree-header {
+	background: #333 !important;
+}
+
+#main-nav-bar a {
+	color: white !important;
+}
+
+input[type="submit"] {
+	background: #333 !important;
+	color: white !important;
+}
+
+button {
+	background: #333 !important;
+}
+
+button a {
+	color: white !important;
+}
+
+button a:hover {
+	color: white !important;
+}
+
+.navbar a {
+	color: #333 !important;
 }
 
 footer {
