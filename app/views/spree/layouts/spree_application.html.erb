@@ -8,7 +8,7 @@
     <%= render partial: 'spree/shared/head' %>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/nivo-slider.css" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    
 	<script src="assets/jquery.nivo.slider.pack.js" type="text/javascript"></script>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
@@ -32,5 +32,12 @@
     </div>
     
     <%= render partial: 'spree/shared/footer' %>
+    
+    <div id="toTop">
+    	<a href="#header">
+			<i class="fa fa-angle-up"></i>
+    	</a>
+    </div>
+    
   </body>
 </html>
