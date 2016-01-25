@@ -67,19 +67,19 @@
     
     <%= f.field_container :facebook do %>
       <%= f.text_field :facebook, :class => 'fullwidth title' %>
-      <%= f.label :facebook, raw(Spree.t(:facebook)) %><span style="margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.facebook.com/username</span>
+      <%= f.label :facebook, raw(Spree.t(:facebook)) %><span style="float:right;margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.facebook.com/username</span>
       <%= f.error_message_on :facebook %>
     <% end %>
     
     <%= f.field_container :twitter do %>
       <%= f.text_field :twitter, :class => 'fullwidth title' %>
-      <%= f.label :twitter, raw(Spree.t(:twitter)) %><span style="margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.twitter.com/username</span>
+      <%= f.label :twitter, raw(Spree.t(:twitter)) %><span style="float:right;margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.twitter.com/username</span>
       <%= f.error_message_on :twitter %>
     <% end %>
     
     <%= f.field_container :linkedin do %>
       <%= f.text_field :linkedin, :class => 'fullwidth title' %>
-      <%= f.label :linkedin, raw(Spree.t(:linkedin)) %><span style="margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.linkedin.com/username</span>
+      <%= f.label :linkedin, raw(Spree.t(:linkedin)) %><span style="float:right;margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.linkedin.com/username</span>
       <%= f.error_message_on :linkedin %>
     <% end %>
     
