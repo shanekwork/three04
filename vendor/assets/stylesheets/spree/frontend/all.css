@@ -246,7 +246,9 @@ img#credit-card-image.pull-right {
 	max-width: 50px !important;
 }
 
-
+.cart-item-image {
+	display: none !important;
+}
 
 
 
