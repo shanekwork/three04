@@ -236,9 +236,15 @@ li.active > a {
 	margin-bottom: 30px;
 }
 
+img#credit-card-image.pull-right {
+	width: 100% !important;
+	height: auto !important;
+	max-width: 220px !important;
+}
 
-
-
+.payment-info img {
+	max-width: 50px !important;
+}
 
 
 
