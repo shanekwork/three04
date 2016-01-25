@@ -5,8 +5,7 @@
 
 <div id="customer-address">
 	<% @add = Spree::Product.find_by(name: 'customer-address') %>
-	<p><%= @add.address %></p>
-	<p><%= link_to "Edit customer address", edit_admin_product_path(@add) %></p>
+	<h3><%= link_to "Click here to edit Contact details throughout Site", edit_admin_product_path(@add) %></h3>
 </div>
 
 
