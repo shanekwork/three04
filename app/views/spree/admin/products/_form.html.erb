@@ -36,6 +36,34 @@
       <%= f.label :latest, raw(Spree.t(:latest) + content_tag(:span, ' *',  :class => "required")) %>
       <%= f.error_message_on :latest %>
     <% end %>
+    
+    <br><br>
+    
+    <%= f.field_container :address do %>
+      <%= f.text_area :address, :class => 'fullwidth title' %>
+      <%= f.label :address, raw(Spree.t(:address)) %>
+      <%= f.error_message_on :address %>
+    <% end %>
+    
+    <%= f.field_container :phone do %>
+      <%= f.text_field :phone, :class => 'fullwidth title' %>
+      <%= f.label :phone, raw(Spree.t(:phone)) %>
+      <%= f.error_message_on :phone %>
+    <% end %>
+    
+    <%= f.field_container :email do %>
+      <%= f.text_field :email, :class => 'fullwidth title' %>
+      <%= f.label :email, raw(Spree.t(:email)) %>
+      <%= f.error_message_on :email %>
+    <% end %>
+    
+    <%= f.field_container :mailer do %>
+      <%= f.text_field :mailer, :class => 'fullwidth title' %>
+      <%= f.label :mailer, raw(Spree.t(:mailer)) %>
+      <%= f.error_message_on :mailer %>
+    <% end %>
+    
+    <br><br>
 
       <div data-hook="admin_product_form_description">
         <%= f.field_container :description, class: ['form-group'] do %>

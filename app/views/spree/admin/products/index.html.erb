@@ -2,6 +2,14 @@
   <%= plural_resource_name(Spree::Product) %>
 <% end %>
 
+
+<div id="customer-address">
+	<% @add = Spree::Product.find_by(name: 'customer-address') %>
+	<p><%= @add.address %></p>
+	<p><%= link_to "Edit customer address", edit_admin_product_path(@add) %></p>
+</div>
+
+
 <hr style="margin-top:3%;">
 <h2 style="text-align:center">Home Specials</h2>
 
