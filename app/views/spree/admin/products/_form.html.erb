@@ -157,6 +157,12 @@
             <%= f.text_field :sku, size: 16, class: 'form-control' %>
           <% end %>
         </div>
+        
+        <%= f.field_container :ts_code do %>
+	      <%= f.label :ts_code, raw(Spree.t(:ts_code)) %><br>
+	      <%= f.text_field :ts_code, :class => 'fullwidth title' %>
+	      <%= f.error_message_on :ts_code %>
+		 <% end %><br>
 
         <div data-hook="admin_product_form_promotionable">
           <%= f.field_container :promotionable, class: ['form-group'] do %>
