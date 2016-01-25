@@ -39,6 +39,8 @@
     
     <br><br>
     
+    <% if current_page?('https://three04.herokuapp.com/admin/products/customeraddress/edit') %>
+    
     <h3 style="background: #5799d8;color:white;">Edit/Add Your contact details for front page</h3>
     
     <%= f.field_container :address do %>
@@ -83,7 +85,7 @@
       <%= f.error_message_on :linkedin %>
     <% end %>
     
- 
+	<% end %>
     
     <br><br>
 
