@@ -33,6 +33,11 @@
           <div class="well" itemprop="description" data-hook="description">
             <%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
           </div>
+          
+          <h4>Machine Models</h4>
+          <div class="well" itemprop="after-fav">
+          	<%= @product.machine_models %>
+          </div>
 
           <div id="cart-form" data-hook="cart_form">
             <%= render :partial => 'cart_form' %>
