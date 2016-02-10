@@ -17,7 +17,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  #gem 'spring'
 end
 
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '3-0-stable'
@@ -32,4 +32,5 @@ gem 'spree_chimpy', github: 'DynamoMTL/spree_chimpy', branch: '3-stable'
 gem 'rails_12factor', group: :production
 ruby "2.2.3"
 
-gem "searchkick"
+
+gem 'spree_autosuggest', :git => 'git://github.com/evrone/spree_autosuggest.git'

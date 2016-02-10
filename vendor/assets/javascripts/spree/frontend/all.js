@@ -12,3 +12,5 @@
 
 //= require store/spree_favorite_products
 //= require spree/frontend/spree_reviews
+//= require jquery-ui/autocomplete
+//= require frontend/spree_autosuggest
