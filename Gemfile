@@ -31,3 +31,5 @@ gem 'spree_chimpy', github: 'DynamoMTL/spree_chimpy', branch: '3-stable'
 
 gem 'rails_12factor', group: :production
 ruby "2.2.3"
+
+gem "searchkick"

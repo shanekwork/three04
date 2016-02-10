@@ -1,6 +1,6 @@
 Spree::Chimpy.config do |config|
   # your API key as provided by MailChimp
-  # config.key = 'your-api-key'
+  config.key = 'a35e160c4ab597948ab724d15f28a415-us12'
 
   # extra api options for the Mailchimp gem
   # config.api_options = { throws_exceptions: false, timeout: 3600 }
