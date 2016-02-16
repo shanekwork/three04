@@ -20,7 +20,9 @@
 
 module Spree
   class Product < Spree::Base
-	  searchkick
+	  
+	  searchkick text_start: [:machine_models2]
+	  
     extend FriendlyId
     friendly_id :slug_candidates, use: :history
 
