@@ -10,7 +10,6 @@
  *= require store/spree_favorite_products
  *= require spree/frontend/spree_reviews
  *= require spree/frontend/spree_static_content
- *= require jquery-ui/autocomplete
 */
 
 /**
@@ -21,14 +20,11 @@
  *    that are clearfixed.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
-  *= require jquery-ui/autocomplete
-*/
+ */
 .cf:before,
 .cf:after {
-    content: " "; /* 1  *= require jquery-ui/autocomplete
-*/
-    display: table; /* 2  *= require jquery-ui/autocomplete
-*/
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .cf:after {
@@ -38,8 +34,7 @@
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
-  *= require jquery-ui/autocomplete
-*/
+ */
 .cf {
     *zoom: 1;
 }

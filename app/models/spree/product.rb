@@ -20,7 +20,7 @@
 
 module Spree
   class Product < Spree::Base
-	  
+	  searchkick
     extend FriendlyId
     friendly_id :slug_candidates, use: :history
 
