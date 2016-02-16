@@ -11,7 +11,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+Spree::Core::Engine.add_routes do
+		resources :products do
+			 :autocomplete
+			end
+	end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -7,3 +7,12 @@
   </div>
   <%= submit_tag Spree.t(:search), :name => nil, class: "btn btn-success" %>
 <% end %>
+
+
+<h2>New Search</h2>
+
+<%= form_tag products_path, method: :get do %>
+
+	<%= text_field_tag :q, nil, placeholder: 'Search' %>
+	
+<% end %>

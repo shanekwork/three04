@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require turbolinks
 //= require_tree .
+
+jQuery(function() {
+  return $("#q").autocomplete({
+    source: "/products/autocomplete",
+    minLength: 2
+  });
+});
+			
