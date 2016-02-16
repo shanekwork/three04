@@ -38,4 +38,3 @@ gem "searchkick"
 
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
-gem 'bonsai-elasticsearch-rails'
