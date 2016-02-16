@@ -31,6 +31,9 @@ gem 'spree_chimpy', github: 'DynamoMTL/spree_chimpy', branch: '3-stable'
 
 gem 'rails_12factor', group: :production
 ruby "2.2.3"
+gem 'spree_autosuggest'
+
+gem 'jquery-ui-rails'
+gem 'rails4-autocomplete'
 
 
-gem 'spree_autosuggest', :git => 'git://github.com/evrone/spree_autosuggest.git'
