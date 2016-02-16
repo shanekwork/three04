@@ -7,8 +7,6 @@ module Spree
     helper 'spree/taxons'
 
     respond_to :html
-    
-    autocomplete :product, :description, :full => true
 
     def index
       @searcher = build_searcher(params.merge(include_images: true))
