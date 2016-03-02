@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/config/initializers/01_devenv.rb
 
 # Ignore all logfiles and tempfiles.
 /log/*
