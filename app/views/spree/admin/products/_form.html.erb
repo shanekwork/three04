@@ -92,6 +92,20 @@
       <%= f.label :linkedin, raw(Spree.t(:linkedin)) %><span style="float:right;margin-left:30px;background:#5799d8;color:white;">Must be in format http://www.linkedin.com/username</span>
       <%= f.error_message_on :linkedin %>
     <% end %>
+
+
+    <%= f.field_container :vow_account_code do %>
+      <%= f.text_field :vow_account_code, :class => 'fullwidth title' %>
+      <%= f.label :vow_account_code, raw(Spree.t(:vow_account_code)) %>
+      <%= f.error_message_on :vow_account_code %>
+    <% end %>
+
+    <%= f.field_container :spicers_account_code do %>
+      <%= f.text_field :spicers_account_code, :class => 'fullwidth title' %>
+      <%= f.label :spicers_account_code, raw(Spree.t(:spicers_account_code)) %>
+      <%= f.error_message_on :spicers_account_code %>
+    <% end %>
+
     
 	<% end %>
     
