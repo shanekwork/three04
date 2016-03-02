@@ -13,6 +13,7 @@ gem 'fog', '~> 1.24.0'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "font-awesome-rails"
+gem 'net-ssh', '~> 3.0', '>= 3.0.2'
 
 group :development, :test do
   gem 'byebug'
