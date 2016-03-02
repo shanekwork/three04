@@ -15,7 +15,7 @@ task :xmlord => :environment do
     end
   end
 
-  if @orders.length > 0
+  if @orders.count > 0
 
     @address = Spree::Address.all
     @user = Spree::User.all
