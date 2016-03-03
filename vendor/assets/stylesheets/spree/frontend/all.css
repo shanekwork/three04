@@ -277,6 +277,10 @@ img#credit-card-image.pull-right {
 	
 }
 
+.newsletter {
+	display: none;
+}
+
 h6.search-results-title {
 	font-size: 24px;
 	color: #ec4445;
