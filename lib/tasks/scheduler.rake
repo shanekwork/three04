@@ -50,7 +50,7 @@ task :xmlord => :environment do
 
           xml.Buyer do
             xml.BuyerReferences do
-              xml.SuppliersCodeForBuyer o.user_id
+              xml.SuppliersCodeForBuyer "TEST7"
             end
             xml.Party o.bill_address.company
             xml.Address do
@@ -109,7 +109,7 @@ task :xmlord => :environment do
             xml.OrderLine do
               xml.LineNumbers "Line Numbers"
               xml.Product do
-                xml.SuppliersProductCode p.product.sku
+                xml.SuppliersProductCode p.product.ts_code
                 xml.Description p.product.name
               end
               xml.Quantity do
@@ -118,7 +118,7 @@ task :xmlord => :environment do
               xml.Price do
                 xml.UnitPrice p.product.price
                 xml.LineTax do
-                  xml.TaxRate p.tax_category_id
+                  xml.TaxRate "23%"
                   xml.TaxValue p.additional_tax_total
                 end
               end
