@@ -108,7 +108,7 @@ task :xmlord => :environment do
 
             xml.OrderLine do
               xml.LineNumbers o.line_items.each do |l|
-                puts l.id
+                l.id
               end
               xml.Product do
                 xml.SuppliersProductCode p.product.ts_code
