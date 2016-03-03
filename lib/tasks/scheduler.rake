@@ -107,7 +107,7 @@ task :xmlord => :environment do
           @line.each do |p|
 
             xml.OrderLine do
-              xml.LineNumbers "Line Numbers"
+              xml.LineNumbers o.line_items.id
               xml.Product do
                 xml.SuppliersProductCode p.product.ts_code
                 xml.Description p.product.name
